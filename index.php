@@ -22,6 +22,7 @@
     $practice1 = new practice();
     $practice1->setName("daniel");
     echo $practice1->name;
+    // hello
     ?>
 </body>
 </html>
