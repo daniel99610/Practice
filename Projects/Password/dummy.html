@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="password.css">
+    <script src="https://kit.fontawesome.com/b28e221fb3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Sign up</h1>
+            <div class="full-name">
+                <label id="labelname" for="name">Full Name</label>
+                <input type="name" id="name">
+            </div>
+            
+            <label id="labelemail" for="email">Email</label>
+            <input type="email" id="email">
+            <label id="labelpassword" for="password">Create a Password</label>
+            <input type="password" id="password" oninput="strengthChecker()">
+            <span id="toggle" onclick="toggle()">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+            <div id="strength-bar"></div>
+        </div>
+        <p id="msg">Sample Message</p>
+    </div>
+
+    <script src="password.js"></script>
+</body>
+</html>
